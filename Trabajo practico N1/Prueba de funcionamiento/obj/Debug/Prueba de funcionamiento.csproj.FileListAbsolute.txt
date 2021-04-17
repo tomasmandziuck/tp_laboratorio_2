@@ -1,0 +1,10 @@
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\obj\Debug\Prueba de funcionamiento.csprojAssemblyReference.cache
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\obj\Debug\Prueba de funcionamiento.csproj.CoreCompileInputs.cache
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\bin\Debug\Prueba de funcionamiento.exe.config
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\bin\Debug\Prueba de funcionamiento.exe
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\bin\Debug\Prueba de funcionamiento.pdb
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\bin\Debug\Entidades.dll
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\bin\Debug\Entidades.pdb
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\obj\Debug\Prueba de funcionamiento.csproj.CopyComplete
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\obj\Debug\Prueba de funcionamiento.exe
+C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Prueba de funcionamiento\obj\Debug\Prueba de funcionamiento.pdb

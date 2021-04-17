@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba de funcionamiento", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{78588BFE-CFF6-4437-84C6-C28FF70732FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiCalculadora", "MiCalculadora\MiCalculadora.csproj", "{AC9BC974-125B-4B98-8BED-1AD9B9A19FC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{78588BFE-CFF6-4437-84C6-C28FF70732FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78588BFE-CFF6-4437-84C6-C28FF70732FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78588BFE-CFF6-4437-84C6-C28FF70732FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC9BC974-125B-4B98-8BED-1AD9B9A19FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9BC974-125B-4B98-8BED-1AD9B9A19FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9BC974-125B-4B98-8BED-1AD9B9A19FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9BC974-125B-4B98-8BED-1AD9B9A19FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
