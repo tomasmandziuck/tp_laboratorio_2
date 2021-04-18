@@ -94,12 +94,17 @@ namespace Entidades
             }
             return retorno;
         }
-
+        /// <summary>
+        /// constructor por defecto
+        /// </summary>
         public Numero():this(0)
         {
             
         }
-
+        /// <summary>
+        /// Constructor con parametro tipo double
+        /// </summary>
+        /// <param name="numero"></param>
         public Numero(double numero)
         {
             this.numero = numero;
