@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -18,12 +14,12 @@ namespace Entidades
         {
             char retorno = '+';
 
-            if(operador== '+' || operador == '-' || operador == '/' || operador == '*')
+            if (operador == '+' || operador == '-' || operador == '/' || operador == '*')
             {
                 retorno = operador;
             }
 
-            
+
             return retorno.ToString();
         }
         /// <summary>
@@ -36,7 +32,7 @@ namespace Entidades
         /// <returns>devuelve el resultado de la operacion </returns>
         public static double Operar(Numero num1, Numero num2, char operador)
         {
-            double total=0;
+            double total = 0;
 
             switch (ValidarOperador(operador))
             {
@@ -57,4 +53,5 @@ namespace Entidades
             return total;
         }
     }
+
 }

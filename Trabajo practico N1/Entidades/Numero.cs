@@ -16,7 +16,7 @@ namespace Entidades
         {
             set
             {
-                this.numero=ValidarNumero(value);
+                this.numero = ValidarNumero(value);
             }
         }
         /// <summary>
@@ -30,7 +30,7 @@ namespace Entidades
         {
             char[] array;
             int suma = 0;
-            string retorno="Valor invalido";
+            string retorno = "Valor invalido";
             if (EsBinario(binario))
             {
                 array = binario.ToCharArray();
@@ -56,7 +56,7 @@ namespace Entidades
         {
 
             string cadena = "";
-            string retorno="valor invalido";
+            string retorno = "valor invalido";
             if (numero > 0)
             {
                 while (numero > 0)
@@ -70,7 +70,7 @@ namespace Entidades
                         cadena = "1" + cadena;
                     }
                     numero = (int)(numero / 2);
-                    
+
                 }
                 retorno = cadena;
             }
@@ -102,10 +102,10 @@ namespace Entidades
         private static bool EsBinario(string binario)
         {
             bool retorno = false;
-            int contador=0;
-            foreach(char aux in binario)
+            int contador = 0;
+            foreach (char aux in binario)
             {
-                if(aux == '0' || aux == '1')
+                if (aux == '0' || aux == '1')
                 {
                     retorno = true;
                     contador++;
@@ -120,9 +120,9 @@ namespace Entidades
         /// <summary>
         /// constructor de instancia por defecto
         /// </summary>
-        public Numero():this(0)
+        public Numero() : this(0)
         {
-            
+
         }
         /// <summary>
         /// Constructor de instancia con parametro tipo double
@@ -194,11 +194,12 @@ namespace Entidades
         /// </summary>
         /// <param name="strNumero"></param>
         /// <returns></returns>
-        private static double ValidarNumero (string strNumero)
+        private static double ValidarNumero(string strNumero)
         {
             double aux;
             double.TryParse(strNumero, out aux);
             return aux;
         }
     }
+
 }

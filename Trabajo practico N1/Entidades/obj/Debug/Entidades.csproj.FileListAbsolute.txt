@@ -1,6 +1,0 @@
-C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
-C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Entidades\bin\Debug\Entidades.dll
-C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Entidades\bin\Debug\Entidades.pdb
-C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Entidades\obj\Debug\Entidades.dll
-C:\Users\Tomas Mandziuck\Desktop\Programacion y esas cosas 2\Tp1\Trabajo practico N1\Entidades\obj\Debug\Entidades.pdb

@@ -17,20 +17,17 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
-
-       
         /// <summary>
-        /// muestra un mensaje para preguntar si se quiere cerrar el formulario
-        /// con la opcion Yes se cierra
+        /// Al cargar la calculadora quita el boton minimizar y maximizar 
+        /// aplica el metodo limpiar para setear todos los datos en ""
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void FormCalculadora_Load(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Desea cerrar?", "Cerrar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            MaximizeBox = false;
+            MinimizeBox = false;
+            this.Limpiar();
         }
         /// <summary>
         /// pasa el numero del lblResultado a binario de decimal 
@@ -55,22 +52,27 @@ namespace MiCalculadora
             Numero numero = new Numero();
             if (!string.IsNullOrEmpty(lblResultado.Text))
             {
-               this.lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
+                this.lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
             }
 
         }
         /// <summary>
-        /// Al cargar la calculadora quita el boton minimizar y maximizar 
-        /// aplica el metodo limpiar para setear todos los datos en ""
+        /// llama el metodo operar y le pasa los parametros introducidos por pantalla
+        /// agrega la operacion a la list box de operaciones
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void FormCalculadora_Load(object sender, EventArgs e)
+        private void btnOperar_Click(object sender, EventArgs e)
         {
-            MaximizeBox = false;
-            MinimizeBox = false;
-            this.Limpiar();
-            
+            double total;
+            StringBuilder sb = new StringBuilder();
+            total = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
+            lblResultado.Text = total.ToString();
+            sb.Append(txtNumero1.Text);
+            sb.Append(cmbOperador.Text);
+            sb.Append(txtNumero2.Text);
+            sb.Append($" = {total.ToString()}");
+            lstOperaciones.Items.Add(sb);
         }
         /// <summary>
         /// aplica el metodo limpiar para setear todos los datos en ""
@@ -80,6 +82,20 @@ namespace MiCalculadora
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             this.Limpiar();
+        }
+
+        /// <summary>
+        /// muestra un mensaje para preguntar si se quiere cerrar el formulario
+        /// con la opcion Yes se cierra
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Desea cerrar?", "Cerrar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
         /// <summary>
         /// resetea todos los datos en ""
@@ -105,19 +121,10 @@ namespace MiCalculadora
             char.TryParse(operador, out op);
             Numero num1 = new Numero(numero1);
             Numero num2 = new Numero(numero2);
-            retorno=Calculadora.Operar(num1, num2, op);
+            retorno = Calculadora.Operar(num1, num2, op);
             return retorno;
         }
-        /// <summary>
-        /// llama el metodo operar y le pasa los parametros introducidos por pantalla
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnOperar_Click(object sender, EventArgs e)
-        {
-            double total;
-            total = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
-            lblResultado.Text = total.ToString();
-        }
+
+       
     }
 }
